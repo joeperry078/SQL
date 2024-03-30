@@ -1,0 +1,11 @@
+SELECT price, category
+FROM superstore
+
+SELECT SUM(price), category
+FROM superstore
+GROUP BY category
+
+SELECT MAX(price), category
+FROM superstore
+WHERE category='Kitchen Supplies'
+GROUP BY category;
