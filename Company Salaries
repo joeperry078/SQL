@@ -1,0 +1,9 @@
+SELECT department, SUM(salary) as total_spent
+FROM employees
+GROUP BY department
+HAVING total_spent >= 300000;
+
+SELECT department, AVG(salary) as average_salary
+FROM employees
+GROUP BY department
+HAVING average_salary >= 70000;
